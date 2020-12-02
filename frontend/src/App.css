@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.header {
+  font-family: "Creepster", cursive;
+  background: #a22522;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .heading {
+  font-size: 64px;
+  text-decoration: none;
+  color: #faeded;
+  letter-spacing: 3px;
+}
+
+.index {
+  padding: 20px;
+}
+
+.index .container {
+  width: 90%;
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.index .container .story {
+  margin: 25px 0;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.index .container .story * {
+  margin: 10px 0;
+}
+
+.index .container .story img {
+  width: 100%;
+}
+
+.index .container .story .read-now {
+  color: #fff;
+  display: inline-block;
+  background: #b9211e;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.index .container .story .published {
+  display: block;
+  font-size: 14px;
+}
+
+.pagination {
+  width: 350px;
+  margin: 50px auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagination li {
+  background: #e2ebf7;
+  color: #207fa5;
+  height: 35px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pagination li.active {
+  background: #a22522;
+  color: #eee;
+}
+
+@media screen and (min-width: 650px) {
+  .index .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .index .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+.story-main {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.story-main h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.story-main img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.story-main p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}

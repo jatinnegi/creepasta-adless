@@ -1,0 +1,5 @@
+export const GET_STORIES = "GET_STORIES";
+export const GET_STORY = "GET_STORY";
+export const CLEAR_STORY = "CLEAR_STORY";
+export const LOADING_STORY = "LOADING_STORY";
+export const PAGINATION_UPDATE = "PAGINATION_UPDATE";
